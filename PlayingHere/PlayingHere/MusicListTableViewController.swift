@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController
+class MusicListTableViewController: UITableViewController
 {
 
     override func viewDidLoad() {

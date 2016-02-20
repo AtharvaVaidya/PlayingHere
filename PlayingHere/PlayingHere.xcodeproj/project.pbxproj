@@ -14,6 +14,7 @@
 		EC7AFC171C790248005A5181 /* PlayingHere.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EC7AFC151C790248005A5181 /* PlayingHere.xcdatamodeld */; };
 		EC7AFC191C790248005A5181 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EC7AFC181C790248005A5181 /* Assets.xcassets */; };
 		EC7AFC1C1C790248005A5181 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC7AFC1A1C790248005A5181 /* LaunchScreen.storyboard */; };
+		EC7AFC241C790621005A5181 /* Spotify.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC7AFC231C790621005A5181 /* Spotify.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		EC7AFC181C790248005A5181 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EC7AFC1B1C790248005A5181 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EC7AFC1D1C790248005A5181 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EC7AFC231C790621005A5181 /* Spotify.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Spotify.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,6 +38,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DF4CA2B7D6BEBA0190AC6D3C /* Pods_PlayingHere.framework in Frameworks */,
+				EC7AFC241C790621005A5181 /* Spotify.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -80,6 +83,7 @@
 		EC7AFC0D1C790248005A5181 /* PlayingHere */ = {
 			isa = PBXGroup;
 			children = (
+				EC7AFC231C790621005A5181 /* Spotify.framework */,
 				EC7AFC0E1C790248005A5181 /* AppDelegate.swift */,
 				EC7AFC101C790248005A5181 /* MusicListTableViewController.swift */,
 				EC7AFC121C790248005A5181 /* Main.storyboard */,
@@ -329,6 +333,10 @@
 			baseConfigurationReference = 943A6007D33BD4C18010E4AC /* Pods-PlayingHere.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/PlayingHere",
+				);
 				INFOPLIST_FILE = PlayingHere/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Atharva.PlayingHere;
@@ -341,6 +349,10 @@
 			baseConfigurationReference = C36D34900349E10BBA74CEB7 /* Pods-PlayingHere.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/PlayingHere",
+				);
 				INFOPLIST_FILE = PlayingHere/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Atharva.PlayingHere;

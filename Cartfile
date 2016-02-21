@@ -1,0 +1,2 @@
+github "spotify/ios-sdk"
+github "SnapKit/SnapKit" >= 0.15.0
